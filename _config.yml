@@ -7,7 +7,7 @@ tagline:          'Academic Webpage'
 description:      'Undergraduate Researcher - Artificial Intelligence Security.'
 url:              http://quwenjie.github.io
 baseurl:          /
-cover_image:  yeyuan.jpg
+cover_image:  wenjiequ.jpg
 
 author:
 name:           'Wenjie Qu'
@@ -17,7 +17,5 @@ paginate:         6
 paginate_path:    "/notes/page:num"
 
 pages_list:
-  - name: Home
-    loc: /index.html
   - name: Publications
     loc: /publication.html
