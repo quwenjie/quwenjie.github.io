@@ -7,20 +7,20 @@ title: Home
 <!-- <a href="https://scholar.google.com/citations?user=Jhj7LZUAAAAJ&hl=en">Citation</a> -->
 
 <p>Undergraduate, <br>School of Artificial Intelligence & Automation,<br>
-Huazhong University of Science and Technology, Wuhan, China.</p>
-<a href="CV.pdf">For my full CV, please click here.</a>
+Huazhong University of Science and Technology, Wuhan, China.
+<a href="CV.pdf">For my full CV, please click here.</a></p>
 
-<b>Publications:</b><br>
-<p><b>W. Qu</b>, Q. Wu, P. Zhou, and B. Wang, “Certified Radius-Guided Attacks and Efficient Robustness
+<p><b>Publications:</b><br>
+<b>W. Qu</b>, Q. Wu, P. Zhou, and B. Wang, “Certified Radius-Guided Attacks and Efficient Robustness
 Training against Deep Neural Networks”, <br>in <b>IEEE Symposium on Security and Privacy (SP)</b>, 2021,
-Under Review.</p>
-<p>J. Yang, <b>W. Qu</b>, Y. Shen, Y. Dong, and Y. Ye, “An Interpretable Intelligent Diagnostic Method via
-Fault Prototypes Reasoning”, <br>in IEEE Transactions on Mechatronics, 2021, Under Review.</p>
+Under Review.<br>
+J. Yang, <b>W. Qu</b>, Y. Shen, Y. Dong, and Y. Ye, “An Interpretable Intelligent Diagnostic Method via
+Fault Prototypes Reasoning”, <br>in IEEE Transactions on Mechatronics, 2021, Under Review.<br></p>
   
-<b>Scholarships and Awards:</b><br>
-<p><b>National Scholarship</b>,2020<br></p>
-<p><b>Outstanding Undergraduates in Term of Academic Performance</b>,2020<br></p>
-<p><b>Merit Student</b>,2020<br></p>
+<p><b>Scholarships and Awards:</b><br>
+<b>National Scholarship</b>,2020<br>
+<b>Outstanding Undergraduates in Term of Academic Performance</b>,2020<br>
+<b>Merit Student</b>,2020<br></p>
 
 <b>Contact:</b>
 
