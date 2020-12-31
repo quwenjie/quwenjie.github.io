@@ -6,7 +6,7 @@ title: Home
 
 <!-- <a href="https://scholar.google.com/citations?user=Jhj7LZUAAAAJ&hl=en">Citation</a> -->
 
-<p>Undergraduate, <br>School of Artificial Intelligence & Automation,</br>
+<p>Undergraduate, <br>School of Artificial Intelligence & Automation,<br>
 Huazhong University of Science and Technology, Wuhan, China.</p>
 <a href="CV.pdf">For my full CV, please click here.</a>
 
@@ -17,10 +17,10 @@ Under Review.</p>
 <p>J. Yang, <b>W. Qu</b>, Y. Shen, Y. Dong, and Y. Ye, “An Interpretable Intelligent Diagnostic Method via
 Fault Prototypes Reasoning”, in IEEE Transactions on Mechatronics, 2021, Under Review.</p>
   
-<br><b>Scholarships and Awards</b></br>
-<br><b>National Scholarship</b>,2020</br>
-<br><b>Outstanding Undergraduates in Term of Academic Performance</b>,2020</br>
-<br><b>Merit Student</b>,2020</br>
+<b>Scholarships and Awards</b>
+<b>National Scholarship</b>,2020<br>
+<b>Outstanding Undergraduates in Term of Academic Performance</b>,2020<br>
+<b>Merit Student</b>,2020<br>
 
 <b>Contact:</b>
 
