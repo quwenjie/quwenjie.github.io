@@ -2,9 +2,9 @@
 layout: default
 title: Home
 ---
-<p><b>Wenjie Qu</b>
+<p><b>Wenjie Qu</b><br>
 Undergraduate, <br>School of Artificial Intelligence & Automation,<br>
-Huazhong University of Science and Technology, Wuhan, China.
+Huazhong University of Science and Technology, Wuhan, China.<br>
 <a href="CV.pdf">For my full CV, please click here.</a></p>
 
 <p><b>Publications:</b><br></p>
