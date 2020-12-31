@@ -2,37 +2,21 @@
 layout: default
 title: Home
 ---
-<b>Ye Yuan</b>
+<b>Wenjie Qu</b>
 
 <!-- <a href="https://scholar.google.com/citations?user=Jhj7LZUAAAAJ&hl=en">Citation</a> -->
 
-<p>Professor, School of Artificial Intelligence & Automation and State Key Lab of Digital Manufacturing Equipment and Technology,<br  />
-Deputy Director, Ministry of Education Key Lab of Image Processing and Intelligent Control, <br  />
+<p>Professor, School of Artificial Intelligence & Automation,<br  />
 Huazhong University of Science and Technology, Wuhan, China.</p>
-
-
-<b>News:</b>
-
-<p><small>Oct. 2020 — Our paper won the Best Paper Award at the International Industrial Artificial Intelligence Conference.</small></p>
-          
-<p><small>Dec. 2018 — Our poster “Deep Learning Predicts the Grasping Locations for Dual-arm Manipulators” won the Best poster Award at the Annual Conference of Chinese Robotics Society.</small></p>
-
-<p><small>Jul. 2018 — Excellence in Mentoring Award, HUST.</small></p>
-          
-<p><small>Jun. 2018 — Our paper “Distributed Finte-time Optimization” won the Best student paper prize at the 14th IEEE International Conference on Control and Automation'18.</small></p>
-
-<p><small>Aug. 2017 — Our paper “Event Detection and Localization in Distribution Grids with Phasor Measurement Units” won the "Best of the Best" paper prize at the IEEE Power Energy Society General Meeting'17.</small></p>
-
 
 
 <b>Contact:</b>
 
-<p><small>Office: 315, South-1 Building (Nan-1 Lou) <br  />
-Lab: 116, South-1 Building (Nan-1 Lou) <br  />
-Email: yye@hust.edu.cn, yeyuan_ref@163.com (for reference letters).</small></p>
+<p><small>
+Email: wenjiequ@hust.edu.cn.</small></p>
 
 <span class="footercued">
-Updated on 7/2019.<br />
+Updated on 1/2021.<br />
 <span>
 
 
