@@ -2,11 +2,8 @@
 layout: default
 title: Home
 ---
-<b>Wenjie Qu</b>
-
-<!-- <a href="https://scholar.google.com/citations?user=Jhj7LZUAAAAJ&hl=en">Citation</a> -->
-
-<p>Undergraduate, <br>School of Artificial Intelligence & Automation,<br>
+<p><b>Wenjie Qu</b>
+Undergraduate, <br>School of Artificial Intelligence & Automation,<br>
 Huazhong University of Science and Technology, Wuhan, China.
 <a href="CV.pdf">For my full CV, please click here.</a></p>
 
