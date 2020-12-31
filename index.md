@@ -11,6 +11,9 @@ Huazhong University of Science and Technology, Wuhan, China.</p>
 <a href="CV.pdf">For my full CV, please click here.</a>
 
 <b>Publications</b>
+<p><b>W. Qu</br>, Q. Wu, P. Zhou, and B. Wang, “Certified Radius-Guided Attacks and Efficient Robustness
+Training against Deep Neural Networks”, in IEEE Symposium on Security and Privacy (SP), 2021,
+Under Review.</p>
 
 <b>Scholarships and Awards</b>
 
