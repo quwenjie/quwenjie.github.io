@@ -17,5 +17,7 @@ paginate:         6
 paginate_path:    "/notes/page:num"
 
 pages_list:
+  - name: Home
+    loc: /index.html
   - name: Publications
     loc: /publication.html
