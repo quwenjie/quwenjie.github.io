@@ -2,16 +2,16 @@
 highlighter:      pygments
 
 # Setup
-title:            Ye Yuan
+title:            Wenjie Qu
 tagline:          'Academic Webpage'
-description:      'Researcher - Control, Learning, Cyber-Physical Systems.'
-url:              http://yy311.github.io
+description:      'Undergraduate Researcher - Artificial Intelligence Security.'
+url:              http://quwenjie.github.io
 baseurl:          /
 cover_image:  yeyuan.jpg
 
 author:
-name:           'Ye Yuan'
-email:          ye.yuan@outlook.com
+name:           'Wenjie Qu'
+email:          wenjiequ@hust.edu.cn
 
 paginate:         6
 paginate_path:    "/notes/page:num"
@@ -25,8 +25,3 @@ pages_list:
     loc: /research.html
   - name: Publications
     loc: /publication.html
-  - name: Teaching
-    loc: /teaching.html
-  - name: Software
-    loc: https://github.com/HAIRLAB
-  
