@@ -17,7 +17,7 @@ Under Review.</p>
 <p>J. Yang, <b>W. Qu</b>, Y. Shen, Y. Dong, and Y. Ye, “An Interpretable Intelligent Diagnostic Method via
 Fault Prototypes Reasoning”, <br>in IEEE Transactions on Mechatronics, 2021, Under Review.</p>
   
-<b>Scholarships and Awards</b>
+<b>Scholarships and Awards</b><br>
 <b>National Scholarship</b>,2020<br>
 <b>Outstanding Undergraduates in Term of Academic Performance</b>,2020<br>
 <b>Merit Student</b>,2020<br>
