@@ -13,14 +13,9 @@ author:
 name:           'Wenjie Qu'
 email:          wenjiequ@hust.edu.cn
 
-
-#paginate:         6
-#paginate_path:    "/notes/page:num"
-
-
+paginate:         6
+paginate_path:    "/notes/page:num"
 
 pages_list:
-#  - name: Biography
-#    loc: /bio.html
   - name: Publications
     loc: /publication.html
