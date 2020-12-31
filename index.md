@@ -10,6 +10,10 @@ title: Home
 Huazhong University of Science and Technology, Wuhan, China.</p>
 <a href="CV.pdf">For my full CV, please click here.</a>
 
+<b>Publications</b>
+
+<b>Scholarships and Awards</b>
+
 <b>Contact:</b>
 
 <p><small>
