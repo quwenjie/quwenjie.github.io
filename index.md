@@ -12,10 +12,11 @@ Huazhong University of Science and Technology, Wuhan, China.</p>
 
 <b>Publications</b>
 <p><b>W. Qu</b>, Q. Wu, P. Zhou, and B. Wang, “Certified Radius-Guided Attacks and Efficient Robustness
-Training against Deep Neural Networks”, in IEEE Symposium on Security and Privacy (SP), 2021,
+Training against Deep Neural Networks”, in <b>IEEE Symposium on Security and Privacy (SP)</b>, 2021,
 Under Review.</p>
 <p>J. Yang, <b>W. Qu</b>, Y. Shen, Y. Dong, and Y. Ye, “An Interpretable Intelligent Diagnostic Method via
-Fault Prototypes Reasoning”, in IEEE Transactions on Mechatronics, 2021, Under Review.
+Fault Prototypes Reasoning”, in IEEE Transactions on Mechatronics, 2021, Under Review.</p>
+  
 <b>Scholarships and Awards</p>
 
 <b>Contact:</b>
