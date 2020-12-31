@@ -8,7 +8,7 @@ title: Home
 
 <p>Undergraduate, School of Artificial Intelligence & Automation,<br  />
 Huazhong University of Science and Technology, Wuhan, China.</p>
-
+<a href="CV.pdf">For my full CV, please click here.</a>
 
 <b>Contact:</b>
 
