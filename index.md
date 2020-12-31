@@ -17,7 +17,7 @@ Fault Prototypes Reasoning”, <br>in IEEE Transactions on Mechatronics, 2021, U
 <p><b>Scholarships and Awards:</b><br></p>
 <p><b>  National Scholarship</b>,2020<br></p>
 <p><b>  Outstanding Undergraduates in Term of Academic Performance</b>,2020<br></p>
-<p><b>  Merit Student</b>,2020<br></p>
+<p>  Merit Student</b>,2020</p>
 
 <b>Contact:</b>
 
