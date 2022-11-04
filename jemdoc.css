@@ -67,6 +67,16 @@ a:hover {
 	border-bottom: 1px gray dotted;
 }
 
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px
+}
+
 #layout-menu a.current:link, #layout-menu a.current:visited {
 	color: #022b6d;
 	border-bottom: 1px gray solid;
@@ -339,7 +349,7 @@ img.eqwl {
 }
 
 table {
-    border: 2px solid black;
+    border: none;
     border-collapse: collapse;
 }
 
@@ -348,7 +358,7 @@ td {
     padding-left: 0.5em;
     padding-right: 0.5em;
     text-align: left;
-    border: 1px solid gray;
+    border: none;
 }
 
 table + table {
@@ -357,7 +367,7 @@ table + table {
 
 tr.heading {
     font-weight: bold;
-    border-bottom: 2px solid black;
+    border: none;
 }
 
 img {
