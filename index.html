@@ -64,37 +64,39 @@
 			font-size: 36px;
 		}
 
-		/* Publication filter */
-		.pub-filter {
-			margin: 12px 0 20px 0;
-			line-height: 2.2;
-		}
-
-		.pub-filter button {
-			background: none;
-			border: 1px solid #dddddd;
-			padding: 6px 11px;
-			margin: 0 5px 5px 0;
-			font-family: 'Lato', Verdana, Helvetica, sans-serif;
-			font-size: 15px;
-			color: #1772d0;
-			cursor: pointer;
-			border-radius: 5px;
-			transition: background-color 0.15s ease, color 0.15s ease;
-		}
-
-		.pub-filter button:hover {
-			background-color: #f2f2f2;
-		}
-
-		.pub-filter button.active {
-			background-color: #1772d0;
-			border-color: #1772d0;
-			color: #ffffff;
-		}
-
 		.publication-item {
 			display: list-item;
+		}
+
+		/* Topic tags */
+		.topic-tag {
+			display: inline-block;
+			font-family: 'Lato', Verdana, Helvetica, sans-serif;
+			font-size: 12.5px;
+			font-weight: normal;
+			line-height: 1.5;
+			padding: 0 8px;
+			margin: 0 4px 0 2px;
+			border: 1px solid;
+			border-radius: 10px;
+			vertical-align: 1px;
+			white-space: nowrap;
+		}
+
+		.t-agent  { color: #b3261e; border-color: #ebb9b5; background: #fdf3f2; }
+		.t-llm    { color: #6a3fa0; border-color: #d3c3e8; background: #f8f4fd; }
+		.t-ai     { color: #2e6b30; border-color: #bcd9bd; background: #f3f9f3; }
+		.t-cyber  { color: #5b5b5b; border-color: #d0d0d0; background: #f6f6f6; }
+		.t-verif  { color: #1460ad; border-color: #b7cfea; background: #f2f7fd; }
+		.t-crypto { color: #3d4a5c; border-color: #c6ccd5; background: #f4f6f8; }
+
+		h2 .h2-note {
+			font-size: 15px;
+			font-weight: normal;
+		}
+
+		.pub-toggle {
+			margin-top: -6px;
 		}
 	</style>
 </head>
@@ -120,7 +122,7 @@
 <p>
 		Hi! I am a PostDoc at UC Berkeley with Prof. <a href="https://dawnsong.io/">Dawn Song</a>. I received my PhD from the National University of Singapore. 
 		</p>
-<p>My research is at the intersection of LLM, security, and privacy, with a focus on building secure, verifiable, and auditable AI systems. </p>
+<p>My research focuses on the safety and security of LLMs and LLM agents. Previously, I worked on making AI systems verifiable and auditable through cryptography and watermarking.</p>
 <p>
 			I am always open to collaborations. If you share similar interests,
 			feel free to email me.
@@ -128,52 +130,176 @@
 <h2>Education</h2>
 <ul>
 <li>
-<p>PhD, National University of Singapore<br/>
+<p>PhD, National University of Singapore, 2023 – 2026<br/>
 	Defense committee: Jiaheng Zhang (advisor), Bingsheng He, Xiaokui Xiao, Prateek Saxena</p>
 </li>
 <li>
-<p>B.E., Huazhong University of Science and Technology</p>
+<p>B.E., Huazhong University of Science and Technology, 2019 – 2023</p>
 </li>
 </ul>
-<h2>Publications</h2>
-<div class="pub-filter">
-<button class="active" data-filter="selected" type="button">Selected</button><button data-filter="ai-auditing" type="button">AI Auditing</button><button data-filter="ai-security" type="button">AI Security &amp; Privacy</button><button data-filter="crypto" type="button">Verifiable Computation &amp; Cryptography</button></div>
+<h2><span id="pub-heading">Selected Publications</span> <span class="h2-note">(* equal contribution)</span></h2>
+<p>I have published 8 first-author papers at the top-tier security and cryptography conferences (IEEE S&amp;P, USENIX Security, CCS, NDSS, CRYPTO).</p>
+<p class="pub-toggle"><a href="#publication-list" id="pub-toggle">Show all publications</a></p>
+
+<!--
+	How this list works:
+	- data-selected="true": the paper appears under "Selected". Remove it to drop a paper from Selected.
+	- "Show all publications" reveals every paper; both views keep the order written below.
+-->
 <ul id="publication-list">
-<!-- AI Auditing -->
-<!-- AI Security & Privacy -->
-<!-- Verifiable Computation & Cryptography -->
- <li class="publication-item" data-category="ai-security" data-selected="true">
-    <p>
-        <b>MetaPI: Constructing Prompt Injection Benchmarks from Any Agent Benchmarks</b>
-        <br/>
-        Peiran Wang, Chong Xiang, <b>Wenjie Qu</b>, Ying Li, Jiaheng Zhang, G. Edward Suh, Yuan Tian
-        <br/>
-        NeurIPS, 2026
-    </p>
+
+<li class="publication-item" data-category="agent" data-selected="true">
+<p>
+<b>Securing LLM Agents Need Intent-to-Execution Integrity</b>
+<a href="https://arxiv.org/abs/2605.16976">[paper]</a>
+<span class="topic-tag t-agent">Agent Security</span>
+<br/>
+<b>Wenjie Qu</b>, Ming Xu, Peiran Wang, Shengfang Zhai, Jiaheng Zhang, Dawn Song
+					<br/>
+					arXiv, 2026
+				</p>
 </li>
-<li class="publication-item" data-category="ai-auditing" data-selected="true">
+
+<li class="publication-item" data-category="agent" data-selected="true">
+<p>
+<b>Understanding and Evaluating Claw-like Agent Security Through a Computer-Systems Lens</b> 
+<a href="https://arxiv.org/abs/2606.30755">[paper]</a>
+<span class="topic-tag t-agent">Agent Security</span>
+<br/>
+					Peizhi Niu, <b>Wenjie Qu</b>, Shangding Gu, Tianneng Shi, Yuankai Li, Ahmad Tawaha, Hend Alzahrani,
+					Vincent Siu, Boyi Li, Chenguang Wang, Jiaheng Zhang, Basel Alomair, Ming Jin, Muhao Chen,
+					Chi Wang, Costas Spanos, Dawn Song
+					<br/>
+					arXiv, 2026
+				</p>
+</li>
+
+<li class="publication-item" data-category="agent" data-selected="true">
+<p>
+<b>MetaPI: Constructing Prompt Injection Benchmarks from Any Agent Benchmarks</b>
+<span class="topic-tag t-agent">Agent Security</span>
+<br/>
+					Peiran Wang, Chong Xiang, <b>Wenjie Qu</b>, Ying Li, Jiaheng Zhang, G. Edward Suh, Yuan Tian
+					<br/>
+					NeurIPS, 2026
+				</p>
+</li>
+
+<li class="publication-item" data-category="llm" data-selected="true">
+<p>
+<b>AliMark: Enhancing Robustness of Sentence-Level Watermarking Against Text Paraphrasing</b>
+<a href="https://arxiv.org/abs/2605.29434">[paper]</a>
+<a href="https://github.com/imethanlee/AliMark">[code]</a>
+<span class="topic-tag t-llm">LLM Security</span>
+<br/>Yuexin Li*, <b>Wenjie Qu*</b>, Linyu Wu, Yulin Chen, Yufei He, Tri Cao, Bryan Hooi, Jiaheng Zhang
+					<br/>
+					ICML, 2026
+				</p>
+</li>
+
+<li class="publication-item" data-category="llm" data-selected="true">
+<p>
+<b>Silent Leaks: Implicit Knowledge Extraction Attack on RAG Systems</b>
+<a href="https://arxiv.org/abs/2505.15420">[paper]</a>
+<a href="https://github.com/Wangyuhao06/IKEA">[code]</a>
+<span class="topic-tag t-llm">LLM Security</span>
+<br/>
+					Yuhao Wang*, <b>Wenjie Qu*</b>, Shengfang Zhai, Yanze Jiang,
+					Zichen Liu, Yue Liu, Yinpeng Dong, Jiaheng Zhang
+					<br/>
+					ICLR, 2026
+				</p>
+</li>
+
+<li class="publication-item" data-category="crypto">
+<p>
+<b>VerfCNN, Optimal Complexity zkSNARK for Convolutional Neural Networks</b>
+<a href="https://eprint.iacr.org/2025/2020">[paper]</a>
+<a href="https://github.com/quwenjie/VerfCNN">[code]</a>
+<span class="topic-tag t-verif">Verifiable AI</span><span class="topic-tag t-crypto">Cryptography</span>
+<br/>
+<b>Wenjie Qu*</b>, Yanpei Guo*, Yue Ying, Jiaheng Zhang
+					<br/>
+					IEEE S&amp;P, 2026
+				</p>
+</li>
+
+<li class="publication-item" data-category="crypto">
+<p>
+<b>UltraProofs: Scalable Reed-Solomon Code Commitment</b>
+<a href="https://eprint.iacr.org/2025/865">[paper]</a>
+<span class="topic-tag t-crypto">Cryptography</span>
+<br/>
+					Yanpei Guo, Alex Xiong, <b>Wenjie Qu</b>, Jiaheng Zhang
+					<br/>
+					IEEE S&amp;P, 2026
+				</p>
+</li>
+
+<li class="publication-item" data-category="crypto">
+<p>
+<b>TensorZKP: Repurposing GPU Tensor Cores for High-Performance Zero-Knowledge Proofs</b>
+<a href="https://eprint.iacr.org/2026/1250">[paper]</a>
+<span class="topic-tag t-crypto">Cryptography</span>
+<br/>
+					Tao Lu, Jipeng Zhang, Yanpei Guo, Xuanming Liu,
+					<b>Wenjie Qu</b>, Zonghui Wang, Wenzhi Chen, Jiaheng Zhang
+					<br/>
+					USENIX Security, 2026
+				</p>
+</li>
+
+<li class="publication-item" data-category="crypto">
+<p>
+<b>Rarus: A Succinct and Efficient Range Proof for Polynomial-based Vector Commitment</b>
+<a href="https://www.usenix.org/conference/usenixsecurity26/presentation/yang-xinyang">[paper]</a>
+<span class="topic-tag t-crypto">Cryptography</span>
+<br/>
+					Xinyang Yang*, <b>Wenjie Qu*</b>, Yanpei Guo, Jiaheng Zhang
+					<br/>
+					USENIX Security, 2026
+				</p>
+</li>
+
+<li class="publication-item" data-category="crypto">
 <p>
 <b>Efficient SNARK for Floating-Point Computation</b>
+<span class="topic-tag t-crypto">Cryptography</span>
 <br/>
-					<b>Wenjie Qu</b>, Zihao Zhang, Jiaheng Zhang
+<b>Wenjie Qu</b>, Zihao Zhang, Jiaheng Zhang
 					<br/>
 					CCS, 2026
 				</p>
 </li>
-<li class="publication-item" data-category="ai-auditing" data-selected="true">
+
+<li class="publication-item" data-category="crypto">
 <p>
 <b>Zero-Knowledge Proofs for Gradient Boosted Decision Trees</b>
+<span class="topic-tag t-verif">Verifiable AI</span><span class="topic-tag t-crypto">Cryptography</span>
 <br/>
 					Jiacheng Gao, <b>Wenjie Qu</b>, Yuan Zhang, Sheng Zhong, Jiaheng Zhang
 					<br/>
 					CCS, 2026
 				</p>
 </li>
+
+<li class="publication-item" data-category="crypto">
+<p>
+<b>Melior, Verifiable Mixed-Integer Programming via zkSNARKs</b>
+<span class="topic-tag t-crypto">Cryptography</span>
+<br/>
+<b>Wenjie Qu*</b>, Yanze Jiang*, Yanpei Guo, Jiaheng Zhang
+					<br/>
+					CCS, 2026
+				</p>
+</li>
+
 <li class="publication-item" data-category="crypto" data-selected="true">
 <p>
 <b>Celer: A Lookup Argument for Large-Scale Queries</b>
 <a href="https://eprint.iacr.org/2026/1453">[paper]</a>
 <a href="https://github.com/quwenjie/Celer">[code]</a>
+<span class="topic-tag t-crypto">Cryptography</span>
 <br/>
 <b>Wenjie Qu*</b>, Yanpei Guo*, Zhen Xuan,
 					Xuanming Liu, Jiaheng Zhang
@@ -181,205 +307,190 @@
 					CRYPTO, 2026
 				</p>
 </li>
-<li class="publication-item" data-category="ai-auditing" data-selected="true">
-<p>
-<b>VerfCNN, Optimal Complexity zkSNARK for Convolutional Neural Networks</b>
-<a href="https://eprint.iacr.org/2025/2020">[paper]</a>
-<a href="https://github.com/quwenjie/VerfCNN">[code]</a>
-<br/>
-<b>Wenjie Qu*</b>, Yanpei Guo*, Yue Ying, Jiaheng Zhang
-					<br/>
-					IEEE S&amp;P, 2026
-				</p>
-</li>
-<li class="publication-item" data-category="ai-auditing" data-selected="true">
+
+<li class="publication-item" data-category="crypto llm">
 <p>
 <b>V3DB: Audit-on-Demand Zero-Knowledge Proofs for Verifiable Vector Search over Committed Snapshots</b>
 <a href="https://arxiv.org/abs/2603.03065">[paper]</a>
 <a href="https://github.com/TabibitoQZP/zk-IVF-PQ">[code]</a>
+<span class="topic-tag t-verif">Verifiable AI</span><span class="topic-tag t-crypto">Cryptography</span>
 <br/>
 					Zipeng Qiu*, <b>Wenjie Qu*</b>, Jiaheng Zhang, Binhang Yuan
 					<br/>
 					VLDB, 2026
 				</p>
-</li><li class="publication-item" data-category="ai-auditing" data-selected="true">
-<p>
-<b>AliMark: Enhancing Robustness of Sentence-Level Watermarking Against Text Paraphrasing</b>
-<a href="https://arxiv.org/abs/2605.29434">[paper]</a>
-<a href="https://github.com/imethanlee/AliMark">[code]</a>
-<br/>Yuexin Li*, <b>Wenjie Qu*</b>, Linyu Wu, Yulin Chen, Yufei He, Tri Cao, Bryan Hooi, Jiaheng Zhang
-					<br/>
-					ICML, 2026
-				</p>
-</li><li class="publication-item" data-category="ai-security" data-selected="true">
-<p>
-<b>Silent Leaks: Implicit Knowledge Extraction Attack on RAG Systems</b>
-<a href="https://arxiv.org/abs/2505.15420">[paper]</a>
-<a href="https://github.com/Wangyuhao06/IKEA">[code]</a>
-<br/>
-					Yuhao Wang*, <b>Wenjie Qu*</b>, Shengfang Zhai, Yanze Jiang,
-					Zichen Liu, Yue Liu, Yinpeng Dong, Jiaheng Zhang
-					<br/>
-					ICLR, 2026
-				</p>
-</li><li class="publication-item" data-category="crypto" data-selected="true">
-<p>
-<b>TensorZKP: Repurposing GPU Tensor Cores for High-Performance Zero-Knowledge Proofs</b>
-<a href="https://eprint.iacr.org/2026/1250">[paper]</a>
-<br/>
-					Tao Lu, Jipeng Zhang, Yanpei Guo, Xuanming Liu,
-					<b>Wenjie Qu</b>, Zonghui Wang, Wenzhi Chen, Jiaheng Zhang
-					<br/>
-					USENIX Security, 2026
-				</p>
-</li><li class="publication-item" data-category="crypto" data-selected="true">
-<p>
-<b>Melior, Verifiable Mixed-Integer Programming via zkSNARKs</b>
-<br/>
-<b>Wenjie Qu*</b>, Yanze Jiang*, Yanpei Guo, Jiaheng Zhang
-					<br/>
-					CCS, 2026
-				</p>
-</li><li class="publication-item" data-category="crypto" data-selected="true">
-<p>
-<b>Rarus: A Succinct and Efficient Range Proof for Polynomial-based Vector Commitment</b>
-<a href="https://www.usenix.org/conference/usenixsecurity26/presentation/yang-xinyang">[paper]</a>
-<br/>
-					Xinyang Yang*, <b>Wenjie Qu*</b>, Yanpei Guo, Jiaheng Zhang
-					<br/>
-					USENIX Security, 2026
-				</p>
-</li><li class="publication-item" data-category="crypto" data-selected="true">
-<p>
-<b>UltraProofs: Scalable Reed-Solomon Code Commitment</b>
-<a href="https://eprint.iacr.org/2025/865">[paper]</a>
-<br/>
-					Yanpei Guo, Alex Xiong, <b>Wenjie Qu</b>, Jiaheng Zhang
-					<br/>
-					IEEE S&amp;P, 2026
-				</p>
-</li><li class="publication-item" data-category="ai-auditing" data-selected="true">
-<p>
-<b>zkGPT: An Efficient Non-interactive Zero-knowledge Proof Framework for LLM Inference</b>
-<a href="https://eprint.iacr.org/2025/1184">[paper]</a>
-<a href="https://github.com/security-Anonymous/zkgpt">[code]</a>
-<br/>
-<b>Wenjie Qu</b>, Yijun Sun, Xuanming Liu, Tao Lu,
-					Yanpei Guo, Kai Chen, Jiaheng Zhang
-					<br/>
-					USENIX Security, 2025
-				</p>
-</li><li class="publication-item" data-category="ai-auditing" data-selected="true">
-<p>
-<b>Provably Robust Multi-bit Watermarking for AI-generated Text</b>
-<a href="https://arxiv.org/abs/2401.16820">[paper]</a>
-<a href="https://github.com/randomizedtree/segment-watermark">[code]</a>
-<br/>
-<b>Wenjie Qu</b>, Wengrui Zheng, Tianyang Tao, Dong Yin,
-					Yanze Jiang, Zhihua Tian, Wei Zou, Jinyuan Jia, Jiaheng Zhang
-					<br/>
-					USENIX Security, 2025
-				</p>
-</li><li class="publication-item" data-category="ai-security" data-selected="true">
+</li>
+
+<li class="publication-item" data-category="llm" data-selected="true">
 <p>
 <b>Prompt Inversion Attack against Collaborative Inference of Large Language Models</b>
 <a href="https://arxiv.org/abs/2503.09022">[paper]</a>
 <a href="https://github.com/ygZhou02/DEML">[code]</a>
+<span class="topic-tag t-llm">LLM Security</span>
 <br/>
 <b>Wenjie Qu</b>, Yuguang Zhou, Yongji Wu, Tingsong Xiao,
 					Binhang Yuan, Yiming Li, Jiaheng Zhang
 					<br/>
 					IEEE S&amp;P, 2025
 				</p>
-</li><li class="publication-item" data-category="ai-security" data-selected="false">
-<p>
-<b>Reliable and Responsible Foundation Models</b>
-<a href="https://arxiv.org/abs/2602.08145">[paper]</a>
-<br/>
-					Xinyu Yang*, Junlin Han*, Rishi Bommasani*, Jinqi Luo*,
-					<b>Wenjie Qu*</b>, Wangchunshu Zhou*, et al.
-					<br/>
-					TMLR, 2025
-				</p>
-</li><li class="publication-item" data-category="ai-security" data-selected="false">
-<p>
-<b>Efficient Input-level Backdoor Defense on Text-to-Image Synthesis via Neuron Activation Variation</b>
-<a href="https://arxiv.org/abs/2503.06453">[paper]</a>
-<a href="https://github.com/zhaisf/NaviT2I">[code]</a>
-<br/>
-					Shengfang Zhai, Jiajun Li, Yue Liu, Huanran Chen, Zhihua Tian,
-					<b>Wenjie Qu</b>, Qingni Shen, Ruoxi Jia, Yinpeng Dong, Jiaheng Zhang
-					<br/>
-					ICCV, 2025, <b>Highlight</b>
-</p>
-</li><li class="publication-item" data-category="crypto" data-selected="true">
-<p>
-<b>DeepFold: Efficient Multilinear Polynomial Commitment from Reed-Solomon Code and Its Application to Zero-knowledge Proofs</b>
-<a href="https://eprint.iacr.org/2024/1595">[paper]</a>
-<br/>Yanpei Guo, Xuanming Liu, Kexi Huang, <b>Wenjie Qu</b>, Tianyang Tao, Jiaheng Zhang
-					<br/>
-					USENIX Security, 2025
-				</p>
-</li><li class="publication-item" data-category="crypto" data-selected="true">
+</li>
+
+<li class="publication-item" data-category="crypto">
 <p>
 <b>HyperPianist: Pianist with Linear-Time Prover and Logarithmic Communication Cost</b>
 <a href="https://eprint.iacr.org/2024/1273">[paper]</a>
+<span class="topic-tag t-crypto">Cryptography</span>
 <br/>
 					Chongrong Li, Pengfei Zhu, Yun Li, Cheng Hong,
 					<b>Wenjie Qu</b>, Jiaheng Zhang
 					<br/>
 					IEEE S&amp;P, 2025
 				</p>
-</li><li class="publication-item" data-category="ai-security" data-selected="true">
+</li>
+
+<li class="publication-item" data-category="llm" data-selected="true">
+<p>
+<b>Provably Robust Multi-bit Watermarking for AI-generated Text</b>
+<a href="https://arxiv.org/abs/2401.16820">[paper]</a>
+<a href="https://github.com/randomizedtree/segment-watermark">[code]</a>
+<span class="topic-tag t-llm">LLM Security</span>
+<br/>
+<b>Wenjie Qu</b>, Wengrui Zheng, Tianyang Tao, Dong Yin,
+					Yanze Jiang, Zhihua Tian, Wei Zou, Jinyuan Jia, Jiaheng Zhang
+					<br/>
+					USENIX Security, 2025
+				</p>
+</li>
+
+<li class="publication-item" data-category="crypto llm" data-selected="true">
+<p>
+<b>zkGPT: An Efficient Non-interactive Zero-knowledge Proof Framework for LLM Inference</b>
+<a href="https://eprint.iacr.org/2025/1184">[paper]</a>
+<a href="https://github.com/security-Anonymous/zkgpt">[code]</a>
+<span class="topic-tag t-verif">Verifiable AI</span><span class="topic-tag t-crypto">Cryptography</span>
+<br/>
+<b>Wenjie Qu</b>, Yijun Sun, Xuanming Liu, Tao Lu,
+					Yanpei Guo, Kai Chen, Jiaheng Zhang
+					<br/>
+					USENIX Security, 2025
+				</p>
+</li>
+
+<li class="publication-item" data-category="crypto">
+<p>
+<b>DeepFold: Efficient Multilinear Polynomial Commitment from Reed-Solomon Code and Its Application to Zero-knowledge Proofs</b>
+<a href="https://eprint.iacr.org/2024/1595">[paper]</a>
+<span class="topic-tag t-crypto">Cryptography</span>
+<br/>Yanpei Guo, Xuanming Liu, Kexi Huang, <b>Wenjie Qu</b>, Tianyang Tao, Jiaheng Zhang
+					<br/>
+					USENIX Security, 2025
+				</p>
+</li>
+
+<li class="publication-item" data-category="ai-security" data-selected="true">
+<p>
+<b>Efficient Input-level Backdoor Defense on Text-to-Image Synthesis via Neuron Activation Variation</b>
+<a href="https://arxiv.org/abs/2503.06453">[paper]</a>
+<a href="https://github.com/zhaisf/NaviT2I">[code]</a>
+<span class="topic-tag t-ai">AI Security</span>
+<br/>
+					Shengfang Zhai, Jiajun Li, Yue Liu, Huanran Chen, Zhihua Tian,
+					<b>Wenjie Qu</b>, Qingni Shen, Ruoxi Jia, Yinpeng Dong, Jiaheng Zhang
+					<br/>
+					ICCV, 2025, <b>Highlight</b>
+</p>
+</li>
+
+<li class="publication-item" data-category="llm" data-selected="true">
+<p>
+<b>Reliable and Responsible Foundation Models</b>
+<a href="https://arxiv.org/abs/2602.08145">[paper]</a>
+<span class="topic-tag t-llm">LLM Security</span>
+<br/>
+					Xinyu Yang*, Junlin Han*, Rishi Bommasani*, Jinqi Luo*,
+					<b>Wenjie Qu*</b>, Wangchunshu Zhou*, et al.
+					<br/>
+					TMLR, 2025
+				</p>
+</li>
+
+<li class="publication-item" data-category="llm" data-selected="true">
+<p>
+<b>PANDORA: Detailed LLM Jailbreaking via Collaborated Phishing Agents with Decomposed Reasoning</b>
+<a href="https://iclr.cc/virtual/2024/23862">[paper]</a>
+<span class="topic-tag t-llm">LLM Security</span>
+<br/>
+					Zhaorun Chen, Zhuokai Zhao, <b>Wenjie Qu</b>, Zichen Wen, Zhiguang Han, Zhihong Zhu, Jiaheng Zhang, Huaxiu Yao
+					<br/>
+					ICLR Workshop on Secure and Trustworthy LLMs, 2024
+				</p>
+</li>
+
+<li class="publication-item" data-category="ai-security" data-selected="true">
 <p>
 <b>REaaS: Enabling Adversarially Robust Downstream Classifiers via Robust Encoder as a Service</b>
 <a href="https://arxiv.org/abs/2301.02905">[paper]</a>
+<span class="topic-tag t-ai">AI Security</span>
 <br/>
 <b>Wenjie Qu</b>, Jinyuan Jia, Neil Gong
 					<br/>
 					NDSS, 2023
 				</p>
-</li><li class="publication-item" data-category="ai-security" data-selected="false">
+</li>
+
+<li class="publication-item" data-category="ai-security">
 <p>
 <b>MPass: Bypassing Learning-based Static Malware Detectors</b>
 <a href="https://netsec.ccert.edu.cn/files/papers/dac23-mpass.pdf">[paper]</a>
+<span class="topic-tag t-cyber">AI for Cybersecurity</span>
 <br/>
 					Jialai Wang, <b>Wenjie Qu</b>, Yi Rong, Han Qiu,
 					Qi Li, Zongpeng Li, Chao Zhang
 					<br/>
 					DAC, 2023
 				</p>
-</li><li class="publication-item" data-category="ai-security" data-selected="false">
+</li>
+
+<li class="publication-item" data-category="ai-security">
 <p>
 <b>MultiGuard: Provably Robust Multi-label Classification against Adversarial Examples</b>
 <a href="https://arxiv.org/abs/2210.01111">[paper]</a>
 <a href="https://github.com/quwenjie/MultiGuard">[code]</a>
+<span class="topic-tag t-ai">AI Security</span>
 <br/>
 					Jinyuan Jia*, <b>Wenjie Qu*</b>, Neil Gong
 					<br/>
 					NeurIPS, 2022, <b>Spotlight</b>
 </p>
-</li><li class="publication-item" data-category="ai-security" data-selected="true">
+</li>
+
+<li class="publication-item" data-category="ai-security">
 <p>
 <b>jTrans: Jump-Aware Transformer for Binary Code Similarity Detection</b>
 <a href="https://arxiv.org/abs/2205.12713">[paper]</a>
 <a href="https://github.com/vul337/jtrans">[code]</a>
+<span class="topic-tag t-cyber">AI for Cybersecurity</span>
 <br/>
 					Hao Wang*, <b>Wenjie Qu*</b>, Gilad Katz, Wenyu Zhu,
 					Zeyu Gao, Han Qiu, Jianwei Zhuge, Chao Zhang
 					<br/>
 					ISSTA, 2022
 				</p>
-</li><li class="publication-item" data-category="ai-security" data-selected="true">
+</li>
+
+<li class="publication-item" data-category="ai-security">
 <p>
 <b>EncoderMI: Membership Inference against Pre-trained Encoders in Contrastive Learning</b>
 <a href="https://arxiv.org/abs/2108.11023">[paper]</a>
+<span class="topic-tag t-ai">AI Security</span>
 <br/>
 					Hongbin Liu*, Jinyuan Jia*, <b>Wenjie Qu</b>, Neil Gong
 					<br/>
 					CCS, 2021
 				</p>
-</li></ul>
+</li>
+
+</ul>
 <h2>Academic Service</h2>
 <ul>
 <li>
@@ -463,46 +574,30 @@
 </div>
 <script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function () {
-			var buttons = document.querySelectorAll(".pub-filter button");
+			var toggle = document.getElementById("pub-toggle");
 			var publications = document.querySelectorAll(".publication-item");
+			var heading = document.getElementById("pub-heading");
+			var showingAll = false;
 
-			function applyFilter(filter) {
+			function render() {
 				for (var k = 0; k < publications.length; k++) {
-					var categories =
-						publications[k]
-							.getAttribute("data-category")
-							.split(/\s+/);
-
-					var showPublication = false;
-
-					if (filter === "selected") {
-						showPublication =
-							publications[k].getAttribute("data-selected") !== "false";
-					} else {
-						showPublication =
-							categories.indexOf(filter) !== -1;
-					}
-
-					publications[k].style.display =
-						showPublication ? "list-item" : "none";
+					var show = showingAll || publications[k].getAttribute("data-selected") === "true";
+					publications[k].style.display = show ? "list-item" : "none";
 				}
+				heading.textContent = showingAll ? "Publications" : "Selected Publications";
+				toggle.textContent = showingAll
+					? "Show selected publications only"
+					: "Show all publications";
 			}
 
-			for (var i = 0; i < buttons.length; i++) {
-				buttons[i].addEventListener("click", function () {
-					var filter = this.getAttribute("data-filter");
+			toggle.addEventListener("click", function (e) {
+				e.preventDefault();
+				showingAll = !showingAll;
+				render();
+			});
 
-					for (var j = 0; j < buttons.length; j++) {
-						buttons[j].classList.remove("active");
-					}
-
-					this.classList.add("active");
-					applyFilter(filter);
-				});
-			}
-
-			// Default view: Selected publications.
-			applyFilter("selected");
+			// Default view: selected publications.
+			render();
 		});
 </script>
 </body>
